@@ -1,0 +1,45 @@
+﻿[dotenv@17.3.1] injecting env (4) from .env.local -- tip: ÔÜÖ´©Å  write to custom object with { processEnv: myObject }
+============================================================
+TESTE DE CONEX├âO - MACHINE API (ENTREGAS)
+============================================================
+API Key: mch_api_bef4...
+Base URL: https://api-trial.taximachine.com.br
+Username: lx.leopoldo@gmail.com
+Password: ***
+============================================================
+
+­ƒöä Testando: Listar Entregadores
+   URL: https://api-trial.taximachine.com.br/api/integracao/condutor?limite=5
+   Status: 503 Service Unavailable
+   ÔØî Erro! Body: <html>
+<head><title>503 Service Temporarily Unavailable</title></head>
+<body>
+<center><h1>503 Service Temporarily Unavailable</h1></center>
+</body>
+</html>
+
+
+­ƒöä Testando: Listar Empresas
+   URL: https://api-trial.taximachine.com.br/api/integracao/empresa
+   Status: 503 Service Unavailable
+   ÔØî Erro! Body: <html>
+<head><title>503 Service Temporarily Unavailable</title></head>
+<body>
+<center><h1>503 Service Temporarily Unavailable</h1></center>
+</body>
+</html>
+
+
+­ƒöä Testando: Listar Corridas (├║ltimas 24h)
+   URL: https://api-trial.taximachine.com.br/api/integracao/solicitacao?data_hora_solicitacao_min=2026-03-29T02%3A57%3A36.180Z&data_hora_solicitacao_max=2026-03-30T02%3A57%3A36.180Z&limite=5&pagina=1
+   Status: 503 Service Unavailable
+   ÔØî Erro! Body: <html>
+<head><title>503 Service Temporarily Unavailable</title></head>
+<body>
+<center><h1>503 Service Temporarily Unavailable</h1></center>
+</body>
+</html>
+
+
+Ô£à Teste completo.
+

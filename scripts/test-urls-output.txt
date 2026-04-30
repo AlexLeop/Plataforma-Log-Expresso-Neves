@@ -1,0 +1,29 @@
+﻿[dotenv@17.3.1] injecting env (4) from .env.local -- tip: ­ƒöÉ encrypt with Dotenvx: https://dotenvx.com
+======================================================================
+TESTE DE URLS - MACHINE API
+API Key: mch_api_bef4...
+Auth: Basic (lx.leopoldo@gmail.com)
+======================================================================
+ÔØî 400 | https://api.taximachine.com.br/api/integracao/condutor?limite=2
+ÔØî 400 | https://api.taximachine.com.br/api/integracao/empresa
+ÔØî 404 | https://api.taximachine.com.br/integracao/v1/condutor?limite=2
+ÔØî 404 | https://api.taximachine.com.br/integracao/v1/empresa
+---
+ÔØî 400 | https://api-vendas.taximachine.com.br/api/integracao/condutor?limite=2
+ÔØî 400 | https://api-vendas.taximachine.com.br/api/integracao/empresa
+ÔØî 404 | https://api-vendas.taximachine.com.br/integracao/v1/condutor?limite=2
+ÔØî 404 | https://api-vendas.taximachine.com.br/integracao/v1/empresa
+---
+ÔØî 503 | https://api-trial.taximachine.com.br/api/integracao/condutor?limite=2
+ÔØî 503 | https://api-trial.taximachine.com.br/api/integracao/empresa
+ÔØî 503 | https://api-trial.taximachine.com.br/integracao/v1/condutor?limite=2
+ÔØî 503 | https://api-trial.taximachine.com.br/integracao/v1/empresa
+---
+
+--- SEM Basic Auth (apenas api-key) ---
+ÔØî 401 | https://api.taximachine.com.br/api/integracao/condutor?limite=2 (SEM Basic Auth)
+ÔØî 400 | https://api-vendas.taximachine.com.br/api/integracao/condutor?limite=2 (SEM Basic Auth)
+ÔØî 503 | https://api-trial.taximachine.com.br/api/integracao/condutor?limite=2 (SEM Basic Auth)
+
+Ô£à Teste completo.
+

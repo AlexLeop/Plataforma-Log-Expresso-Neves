@@ -1,0 +1,122 @@
+﻿[dotenv@17.3.1] injecting env (5) from .env.local -- tip: ÔÜÖ´©Å  override existing env vars with { override: true }
+======================================================================
+TESTE COMPLETO ÔÇö MACHINE API (PRODU├ç├âO)
+======================================================================
+
+­ƒôï 1. CONDUTORES (GET /condutor)
+   Status: 200
+   Registros: 5
+   Campos: id, nome, email, telefone, telefone_internacional, status, cpf, chave_pix, pagamentos, avaliacao_media, data_hora_situacao_cadastral, data_hora_ultima_corrida, numero_viatura, observacao_interna_1, observacao_interna_2, observacao_interna_3, endereco, numero_endereco, complemento, bairro, nome_cidade, uf_sigla, cep, pais_nome, referencia_endereco, dados_extras, veiculos
+   Primeiro: {
+  "id": "2361348",
+  "nome": "Alexandre Luiz Da Silva Filho",
+  "email": "alexandre04072002@gmail.com",
+  "telefone": "(21) 99144-0279",
+  "telefone_internacional": "+5521991440279",
+  "status": "A",
+  "cpf": "135.630.397-80",
+  "chave_pix": "135.630.397-80",
+  "pagamentos": [
+    "D"
+  ],
+  "avaliacao_media": null,
+  "data_hora_situacao_cadastral": "2026-03-29 16:26:38",
+  "data_hora_ultima_corrida": null,
+  "numero_viatura": null,
+  "observacao_interna_1": null,
+  "observacao_interna_2": null,
+  "observacao_interna_3": null,
+  "endereco": "Rua Ernesto Nazareth",
+  "numero_endereco": "100",
+  "complemento": null,
+  "bairro": "Vila Isabel",
+  "nome_cidade": "Rio de Janeiro",
+  "uf_sigla": "RJ",
+  "cep": "20550-210",
+  "pais_nome": "Brasil",
+  "referencia_endereco": null,
+  "dados_extras": null,
+  "veiculos": [
+    {
+      "placa": "SRR1H09",
+      "modelo": "2024",
+      "ano_modelo": "2023",
+      "renavam": "01395122196",
+      "cidade_emplacamento": null,
+      "uf_emplacamento": "RJ",
+      "ano_exercicio": "2025",
+      "em_uso": true
+    }
+  ]
+}
+
+­ƒôï 2. EMPRESAS (GET /empresa)
+   Status: 200
+   Registros: 1
+   Campos: id, nome, numero_contrato, endereco, complemento, bairro, cidade, uf, cep, lat, lng, telefone, telefone_internacional, status_empresa, data_hora_cadastro, dados_extras, tipo_documento, documento, tipos_pagamento, categorias, admins
+   ÔåÆ 108318: Empresa teste
+
+­ƒôï 3. SOLICITA├ç├òES (GET /solicitacao)
+   Status: 200
+   Registros: 4
+   Campos: id, data_hora_solicitacao, data_hora_chegada_local, status_solicitacao, cliente_id, nome_passageiro, empresa_id, bandeira_chamada_id, bandeira_configuracao_id, data_hora_aceite, data_hora_finalizacao, data_hora_cancelamento, data_hora_pendencia, distancia_coleta_km, valor_corrida, condutor_especificado, com_retorno, taxista_id, nome_taxista, telefone_taxista, veiculo, placa_veiculo, cor_veiculo, duracao_corrida, distancia_percorrida_km, taxas_cancelamento, paradas, condutor_id, nome_condutor, telefone_condutor, telefone_condutor_internacional, coleta
+   Primeira corrida: {
+  "id": "682671801",
+  "data_hora_solicitacao": "2026-03-29 16:21:03",
+  "data_hora_chegada_local": null,
+  "status_solicitacao": "C",
+  "cliente_id": "30764295",
+  "nome_passageiro": "Empresa teste",
+  "empresa_id": 108318,
+  "bandeira_chamada_id": "6708",
+  "bandeira_configuracao_id": "6708",
+  "data_hora_aceite": null,
+  "data_hora_finalizacao": null,
+  "data_hora_cancelamento": "2026-03-29 16:22:15",
+  "data_hora_pendencia": "2026-03-29 16:21:04",
+  "distancia_coleta_km": null,
+  "valor_corrida": "6.00",
+  "condutor_especificado": false,
+  "com_retorno": false,
+  "taxista_id": "",
+  "nome_taxista": "",
+  "telefone_taxista": "",
+  "veiculo": "",
+  "placa_veiculo": "",
+  "cor_veiculo": null,
+  "duracao_corrida": "0",
+  "distancia_percorrida_km": "0.000",
+  "taxas_cancelamento": null,
+  "paradas": [
+    {
+      "id": "103376918",
+      "endereco": "Rod. Governador M├írio Covas, 373 - Parada de Lucas, Rio de Janeiro",
+      "complemento": "",
+      "bairro": "Parada de Lucas",
+      "cidade": "Rio de Janeiro",
+      "uf": "RJ",
+      "lat": "-22.816104700",
+      "lng": "-43.302669600",
+      "ordem": 0,
+      "numero_pedido": "123",
+      "link_rastreio_pedido": null
+    }
+  ],
+  "condutor_id": "",
+  "nome_condutor": "",
+  "telefone_condutor": "",
+  "telefone_condutor_internacional": "",
+  "coleta": {
+    "endereco": "Estr. da ├ügua Grande, 1202",
+    "complemento": "Rua Oito, Casa 24",
+    "referencia": null,
+    "bairro": "Vista Alegre",
+    "cidade": "Rio de Janeiro",
+    "estado": "RJ",
+    "lat": "-22.826540200",
+    "lng": "-43.315504100"
+  }
+}
+
+Ô£à Teste completo.
+

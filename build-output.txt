@@ -1,0 +1,75 @@
+﻿node.exe : ÔÜá Warning: Next.js inferred your 
+workspace root, but it may not be correct.
+No linha:1 caractere:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ÔÜá 
+Warning    : Ne...not be correct.:String) [], 
+RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ We detected multiple lockfiles and selected the 
+directory of C:\Users\lxleo\Documents\relatorio-finan
+ceiro-de-motoboys\relatorio-financeiro-de-motoboys\pa
+ckage-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in 
+your Next.js config, or consider removing one of the 
+lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/conf
+ig/next-config-js/turbopack#root-directory for more 
+information.
+ Detected additional lockfiles: 
+   * C:\Users\lxleo\Documents\relatorio-financeiro-de
+-motoboys\relatorio-financeiro-de-motoboys\platform\p
+ackage-lock.json
+
+Ôû▓ Next.js 16.2.1 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+Ô£ô Compiled successfully in 4.4s
+  Running TypeScript ...
+  Finished TypeScript in 5.8s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/14) ...
+  Generating static pages using 7 workers (3/14) 
+  Generating static pages using 7 workers (6/14) 
+  Generating static pages using 7 workers (10/14) 
+Ô£ô Generating static pages using 7 workers (14/14) in 441ms
+  Finalizing page optimization ...
+
+Route (app)
+Ôöî Ôùï /
+Ôö£ Ôùï /_not-found
+Ôö£ ãÆ /api/auth/login
+Ôö£ ãÆ /api/cron/sync-rides
+Ôö£ ãÆ /api/machine/companies
+Ôö£ ãÆ /api/machine/credits/company/balance
+Ôö£ ãÆ /api/machine/credits/driver/balance
+Ôö£ ãÆ /api/machine/credits/driver/recharge
+Ôö£ ãÆ /api/machine/credits/driver/withdraw
+Ôö£ ãÆ /api/machine/drivers
+Ôö£ ãÆ /api/machine/rides
+Ôö£ ãÆ /api/machine/rides/cancel
+Ôö£ ãÆ /api/machine/rides/create
+Ôö£ ãÆ /api/machine/rides/scheduled
+Ôö£ ãÆ /api/machine/rides/status
+Ôö£ ãÆ /api/positions
+Ôö£ ãÆ /api/webhook/posicao
+Ôö£ Ôùï /configuracoes
+Ôö£ Ôùï /corridas
+Ôö£ Ôùï /empresas
+Ôö£ Ôùï /financeiro
+Ôö£ Ôùï /lancamentos
+Ôö£ Ôùï /login
+Ôö£ Ôùï /motoboys
+Ôö£ Ôùï /relatorios
+Ôö£ Ôùï /snapshots
+Ôöö Ôùï /sync
+
+
+Ôùï  (Static)   prerendered as static content
+ãÆ  (Dynamic)  server-rendered on demand
+

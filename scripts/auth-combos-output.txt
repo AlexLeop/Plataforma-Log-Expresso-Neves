@@ -1,0 +1,39 @@
+﻿[dotenv@17.3.1] injecting env (5) from .env.local -- tip: ÔÜÖ´©Å  override existing env vars with { override: true }
+Password loaded: "Al147258@#"
+
+--- email:senha ---
+Status: 200
+Body:     {"success":true,"response":[{"id":"2361348","nome":"Alexandre Luiz Da Silva Filho","email":"alexandre04072002@gmail.com","telefone":"(21) 99144-0279","telefone_internacional":"+5521991440279","status":"A","cpf":"135.630.397-80","chave_pix":"135.630.397-80","pagamentos":["D"],"avaliacao_media":null,"data_hora_situacao_cadastral":"2026-03-29 16:26:38","data_hora_ultima_corrida":null,"numero_viat
+­ƒÄë­ƒÄë­ƒÄë SUCESSO! ­ƒÄë­ƒÄë­ƒÄë
+
+--- codigo:senha ---
+Status: 400
+Body:     {"success":false,"errors":[{"code":1,"message":"Usu\u00e1rio e\/ou senhas inv\u00e1lidos."}]}
+
+--- email:codigo ---
+Status: 400
+Body:     {"success":false,"errors":[{"code":1,"message":"Usu\u00e1rio e\/ou senhas inv\u00e1lidos."}]}
+
+--- codigo:api_key ---
+Status: 400
+Body:     {"success":false,"errors":[{"code":1,"message":"Usu\u00e1rio e\/ou senhas inv\u00e1lidos."}]}
+
+--- api-key + codigo como header ---
+Status: 401
+Body: {"error":{"code":401,"message":"Access credentials are invalid","status":"Unauthorized"}}
+
+--- api-key + central_id param ---
+Status: 401
+Body: {"error":{"code":401,"message":"Access credentials are invalid","status":"Unauthorized"}}
+
+--- POST com login no body ---
+Status: 401
+Body: {"error":{"code":401,"message":"Access credentials are invalid","status":"Unauthorized"}}
+
+--- email:senha + api-key com codigo query ---
+Status: 200
+Body:     {"success":true,"response":[{"id":"2361348","nome":"Alexandre Luiz Da Silva Filho","email":"alexandre04072002@gmail.com","telefone":"(21) 99144-0279","telefone_internacional":"+5521991440279","status":"A","cpf":"135.630.397-80","chave_pix":"135.630.397-80","pagamentos":["D"],"avaliacao_media":null,"data_hora_situacao_cadastral":"2026-03-29 16:26:38","data_hora_ultima_corrida":null,"numero_viat
+­ƒÄë­ƒÄë­ƒÄë SUCESSO! ­ƒÄë­ƒÄë­ƒÄë
+
+Ô£à Completo.
+

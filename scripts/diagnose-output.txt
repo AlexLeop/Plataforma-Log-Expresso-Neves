@@ -1,0 +1,153 @@
+﻿[dotenv@17.3.1] injecting env (4) from .env.local -- tip: ÔÜí´©Å secrets for agents: https://dotenvx.com/as2
+
+--- api-key header + Basic Auth ---
+URL: https://api.taximachine.com.br/api/integracao/condutor
+Headers: {
+  "api-key": "mch_api_bef47bdabf20fbaf96163490",
+  "Authorization": "Basic bHgubGVvcG9sZG9AZ21haWwuY29tOkFsMTQ3MjU4QA==",
+  "Content-Type": "application/json"
+}
+Status: 400
+Response Headers: {
+  "cache-control": "no-store, no-cache, must-revalidate",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "9e43ebeaaa2364f0-GIG",
+  "connection": "keep-alive",
+  "content-length": "97",
+  "content-type": "application/json",
+  "date": "Mon, 30 Mar 2026 03:10:29 GMT",
+  "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+  "mch-router": "integration",
+  "pragma": "no-cache",
+  "server": "cloudflare",
+  "set-cookie": "PHPSESSID=vspc7878gcgp3udi1es7o53j67; path=/"
+}
+Body:     {"success":false,"errors":[{"code":1,"message":"Usu\u00e1rio e\/ou senhas inv\u00e1lidos."}]}
+
+--- api-key como query param ---
+URL: https://api.taximachine.com.br/api/integracao/condutor?api-key=mch_api_bef47bdabf20fbaf96163490
+Headers: {
+  "Authorization": "Basic bHgubGVvcG9sZG9AZ21haWwuY29tOkFsMTQ3MjU4QA==",
+  "Content-Type": "application/json"
+}
+Status: 401
+Response Headers: {
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "9e43ebed1934f41e-GIG",
+  "connection": "keep-alive",
+  "content-length": "89",
+  "content-type": "application/json",
+  "date": "Mon, 30 Mar 2026 03:10:30 GMT",
+  "mch-router": "protected",
+  "server": "cloudflare"
+}
+Body: {"error":{"code":401,"message":"Access credentials are invalid","status":"Unauthorized"}}
+
+--- x-api-key header ---
+URL: https://api.taximachine.com.br/api/integracao/condutor
+Headers: {
+  "x-api-key": "mch_api_bef47bdabf20fbaf96163490",
+  "Authorization": "Basic bHgubGVvcG9sZG9AZ21haWwuY29tOkFsMTQ3MjU4QA==",
+  "Content-Type": "application/json"
+}
+Status: 401
+Response Headers: {
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "9e43ebeddc6a64f0-GIG",
+  "connection": "keep-alive",
+  "content-length": "89",
+  "content-type": "application/json",
+  "date": "Mon, 30 Mar 2026 03:10:30 GMT",
+  "mch-router": "protected",
+  "server": "cloudflare"
+}
+Body: {"error":{"code":401,"message":"Access credentials are invalid","status":"Unauthorized"}}
+
+--- apikey header ---
+URL: https://api.taximachine.com.br/api/integracao/condutor
+Headers: {
+  "apikey": "mch_api_bef47bdabf20fbaf96163490",
+  "Authorization": "Basic bHgubGVvcG9sZG9AZ21haWwuY29tOkFsMTQ3MjU4QA==",
+  "Content-Type": "application/json"
+}
+Status: 401
+Response Headers: {
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "9e43ebeeac71f41e-GIG",
+  "connection": "keep-alive",
+  "content-length": "89",
+  "content-type": "application/json",
+  "date": "Mon, 30 Mar 2026 03:10:30 GMT",
+  "mch-router": "protected",
+  "server": "cloudflare"
+}
+Body: {"error":{"code":401,"message":"Access credentials are invalid","status":"Unauthorized"}}
+
+--- api-key como password do Basic Auth ---
+URL: https://api.taximachine.com.br/api/integracao/condutor
+Headers: {
+  "Authorization": "Basic bHgubGVvcG9sZG9AZ21haWwuY29tOm1jaF9hcGlfYmVmNDdiZGFiZjIwZmJhZjk2MTYzNDkw",
+  "Content-Type": "application/json"
+}
+Status: 401
+Response Headers: {
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "9e43ebef7d8d64f0-GIG",
+  "connection": "keep-alive",
+  "content-length": "89",
+  "content-type": "application/json",
+  "date": "Mon, 30 Mar 2026 03:10:30 GMT",
+  "mch-router": "protected",
+  "server": "cloudflare"
+}
+Body: {"error":{"code":401,"message":"Access credentials are invalid","status":"Unauthorized"}}
+
+--- GET /empresa (sem params) ---
+URL: https://api.taximachine.com.br/api/integracao/empresa
+Headers: {
+  "api-key": "mch_api_bef47bdabf20fbaf96163490",
+  "Authorization": "Basic bHgubGVvcG9sZG9AZ21haWwuY29tOkFsMTQ3MjU4QA==",
+  "Content-Type": "application/json"
+}
+Status: 400
+Response Headers: {
+  "cache-control": "no-store, no-cache, must-revalidate",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "9e43ebf04865f41e-GIG",
+  "connection": "keep-alive",
+  "content-length": "97",
+  "content-type": "application/json",
+  "date": "Mon, 30 Mar 2026 03:10:30 GMT",
+  "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+  "mch-router": "integration",
+  "pragma": "no-cache",
+  "server": "cloudflare",
+  "set-cookie": "PHPSESSID=48k0dgn1n9442d3u54dumjqkv8; path=/"
+}
+Body:     {"success":false,"errors":[{"code":1,"message":"Usu\u00e1rio e\/ou senhas inv\u00e1lidos."}]}
+
+--- api-vendas /condutor ---
+URL: https://api-vendas.taximachine.com.br/api/integracao/condutor
+Headers: {
+  "api-key": "mch_api_bef47bdabf20fbaf96163490",
+  "Authorization": "Basic bHgubGVvcG9sZG9AZ21haWwuY29tOkFsMTQ3MjU4QA==",
+  "Content-Type": "application/json"
+}
+Status: 400
+Response Headers: {
+  "cache-control": "no-store, no-cache, must-revalidate",
+  "cf-cache-status": "DYNAMIC",
+  "cf-ray": "9e43ebf17e0f7e11-GIG",
+  "connection": "keep-alive",
+  "content-length": "62",
+  "content-type": "application/json",
+  "date": "Mon, 30 Mar 2026 03:10:30 GMT",
+  "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+  "pragma": "no-cache",
+  "server": "cloudflare",
+  "set-cookie": "PHPSESSID=5dulke0b65ij5rvidrei5q6m47; path=/"
+}
+Body:     {"success":false,"errors":["Chave da API inv\u00e1lida."]}
+
+Ô£à Diagn├│stico completo.
+
